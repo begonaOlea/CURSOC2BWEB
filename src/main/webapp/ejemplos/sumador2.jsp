@@ -8,20 +8,20 @@
     </head>
     <body>
         
-        <%  
+        <jsp:scriptlet>
            //codigo java  - SCRIPTLETS
            int i = 2;
            int j = 3;
            int suma = i + j;            
-        %>
+          </jsp:scriptlet>
          <!-- expresion -->
-        Resultado: <%= suma %>
+         Resultado: <jsp:expression> suma </jsp:expression>
         
-        <%!
+        <jsp:declaration>
             int contador = 0;
-        %>
+       </jsp:declaration>
         <br />
-        Visitas son : <%= ++contador %>
+        Visitas son : <jsp:expression> ++contador </jsp:expression>
         
     </body>
 </html>
