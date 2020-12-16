@@ -31,7 +31,7 @@
             <table class="table">
                 <thead>
                     <tr>
-                        <th>id</th>
+                        <th>id Prod</th>
                         <th>Nombre</th>
                         <th>Descripción</th>
                     </tr>
