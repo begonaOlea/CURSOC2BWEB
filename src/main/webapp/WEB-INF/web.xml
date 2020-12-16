@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>AdiosServlet</servlet-name>
+        <servlet-class>com.demo.ejemplos.AdiosServlet</servlet-class>
+        <init-param>
+            <param-name>mensaje</param-name>
+            <param-value>Hasta la vista</param-value>
+        </init-param>
+    </servlet>
+    <servlet>
+        <servlet-name>OtroServlet</servlet-name>
+        <servlet-class>com.demo.ejemplos.OtroServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdiosServlet</servlet-name>
+        <url-pattern>/adios</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdiosServlet</servlet-name>
+        <url-pattern>/byebye</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>OtroServlet</servlet-name>
+        <url-pattern>/otro</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
