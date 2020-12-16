@@ -21,6 +21,11 @@
     </head>
     <body>
         <div class="container">
+            
+            <p>
+                <%@include  file="../WEB-INF/vista/cabecera.jspf"   %>
+            </p>
+            
             <h1>Lista de Compras</h1>
             Fecha : <%=   java.time.LocalDate.now()%>
 
