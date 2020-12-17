@@ -45,11 +45,8 @@
              <div class="form-group">
                     <label for="pre">precio</label>
                     <input type="text" class="form-control" value="<%= p.getPrecio()%> " disabled="disabled">
-                </div>
-                
+                </div>                
             </form>
-
-
         </div>  
 
 
